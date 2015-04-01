@@ -2,17 +2,21 @@
 //  ZJLAppDelegate.m
 //  zhanKaiTableView
 //
-//  Created by 张洁林 on 14-2-11.
-//  Copyright (c) 2014年 张洁林. All rights reserved.
+//  Created by 张欣琳 on 14-2-11.
+//  Copyright (c) 2014年 张欣琳 All rights reserved.
 //
 
 #import "ZJLAppDelegate.h"
+#import "ZJLViewController.h"
 
 @implementation ZJLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    ZJLViewController *zjl = [[ZJLViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:zjl];
+    self.window.rootViewController = nav;
+    
     return YES;
 }
 							
@@ -44,3 +48,7 @@
 }
 
 @end
+
+// 版权属于原作者
+// http://code4app.com (cn) http://code4app.net (en)
+// 发布代码于最专业的源码分享网站: Code4App.com
